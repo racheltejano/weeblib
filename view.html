@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/viewstyle.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/gamestyle.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <script src="js/view.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav style="margin-bottom: 0;">
+        <a href="index.html">
+            <img src="images/logo/logo3.png" id="logo">
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Weeb Lib..." id="search-text">
+        </div>
+        <div class="nav-buttons">
+            <a href="wip.html">Featured</a>
+            <a href="wip.html">Polls</a>
+            <a href="wip.html">Anime</a>
+            <a href="games.html">Games</a>
+            <img src="images/profile.png" id="profile">
+            <div class="dropdown">
+                <a href="javascript:void(0);" id="user-dropdown">
+                    <img src="images/navbar/dropdown.png" id="dropdown">
+                </a>
+                <div class="dropdown-content">
+                    <a href="main-profile.html">My Profile</a>
+                    <a href="signin.html">Log out</a>
+                </div>
+            </div>
+            <a href="signin.html" id="signin-link">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- View Container -->
+    <div class="view-container">
+        <div class="view-post">
+            <div class="actual-post">
+            </div>
+            <div class="add-comment">
+                <img src="images/profile.png" class="post-profile">
+                <textarea class="comment-area" onclick="clearDefaultText(this)" onblur="restoreDefaultText(this)"
+                    data-default-value="Write a Comment...">Write a Comment...</textarea>
+                <button class="submit-button">
+                    <img src="images/comment/send.png" class="submit-comment">
+                </button>
+            </div>
+            <div class="view-comments">
+            </div>
+        </div>
+        <div class="view-rightside">
+            <!-- Da Rules -->
+            <h3>Da Rules!</h3>
+            <hr>
+            <div class="rules-container">
+                <div class="rule">
+                    <div class="rule-info">
+                        <h4>Be Respectful.</h4>
+                        <p>Treat others how you would want to be treated.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-info">
+                        <h4>No Spamming</h4>
+                        <p>Avoid repeating yourself needlessly.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-info">
+                        <h4>No Self-promotion</h4>
+                        <p>This is a weeb forum for anime and games, please stay on topic.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-info">
+                        <h4>Respect Intellectual Property</h4>
+                        <p>Follow copyright laws and avoid infringing on others' property.</p>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-info">
+                        <h4>No Hate Speech or Offensive Content.</h4>
+                        <p>No offensive material, such as explicit language, <br> graphic imagery, or derogatory slurs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br /><br />
+        <div id="footer-logo">
+            <img src="images/logo/logo.png" alt="Logo">
+        </div>
+        <br /><br />
+        <div class="tabs">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main-profile.html">My Profile</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="wip.html">Anime</a></li>
+                <li><a href="wip.html">Polls</a></li>
+                <li><a href="wip.html">Privacy Policy</a></li>
+                <li><a href="wip.html">About Us </a></li>
+            </ul>
+        </div>
+        <br /><br />
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitch"></i></a>
+        </div>
+        <br /><br />
+        <div class="copyright">
+            <p>All rights reserved. &copy; 2023</p>
+        </div>
+        <br /><br /><br />
+    </footer>
+</body>
+
+</html>
